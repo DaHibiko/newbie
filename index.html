@@ -6,17 +6,32 @@
     </head>
     <body>
         <div class="card">
-        <h1>Hibikiの自己紹介</h1>
+        <h1 id="title">Hibikiの自己紹介</h1>
+        <button onclick="changetitle()">
+            タイトル変更
+        </button>
+
+        <h2 id="Level">レベル1</h2>
+        <button onclick="LevelUP()">
+        レベルアップ
+        </button>
+
+        <h3 id="Gold">0G</h3>
+        <button onclick="earngold()">
+            +100G
+        </button>"
+
+        <button onclick="hello()">
+            挨拶する
+        </button>
+
         <p>ウェブエンジニアリングを勉強しています。</p>
         <h2>趣味</h2>
-
-        <ul>
         <div class="container">
             <div class="shumi">ゲーム</div>
             <div class="shumi">映画</div>
             <div class="shumi">音楽</div>
-            </div>
-        </ul>
         </div>
+        <script src="script.js"></script> 
     </body>
 </html>

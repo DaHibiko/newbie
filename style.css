@@ -4,7 +4,7 @@ body {
 .container {    
     display: flex;
     gap: 20px; /*marginとgapの違いは頭に入ってる?*/
-    flex-direction: column; /*縦にする場合はcolumn,横はrow。基本的には上のdisplayflexで横になるから必要ない。*/
+    flex-direction: row; /*縦にする場合はcolumn,横はrow。基本的には上のdisplayflexで横になるから必要ない。*/
     justify-content: space-between; /*center,space-betweenだけでいい気がする*/
     align-items: center;
 }
@@ -40,9 +40,9 @@ ul{
 }
 li {    
     list-style: none;
-  background: #f5f5f5;
-  color:black;
-  margin: 5px 0;
-  padding: 12px;
-  border-radius: 10px;
+    background: #f5f5f5;
+    color:black;
+    margin: 5px 0;
+    padding: 12px;
+    border-radius: 10px;
 }
