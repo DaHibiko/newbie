@@ -38,3 +38,29 @@ else if
 else
 ↓
 全部ダメだったら最後の処理 */
+
+        let items = [
+            "剣",
+            "盾",
+            "薬草"
+        ];
+        let prices = [
+            500,
+            300,
+            50
+        ];
+        function buyItem(index){
+            if (gold>= prices[index]){
+            
+            gold = gold - prices[index];
+            document.getElementById("gold").textContent =
+            gold + "G";
+
+            alert(items[index] + "を買いました");
+            
+        } else {
+            alert("お金が足りませんでした")
+        }
+    }
+        console.log("エラー確認用") 
+        /*今やってる範囲だとhasSwordが腐って使えない*/
