@@ -17,3 +17,11 @@ function buyItem(index) {
         items[index].name + "を購入しました";
     }
 }
+
+let html = "";
+for (let i = 0; i < items.length; i++){
+    html += items[i].name + " " + items[i].price + "G" + "<br>";
+}
+
+document.getElementById("shop").innerHTML = html;
+/* html += `${items[i].name} ${items[i].price}G<br>`; 実務はこっちらしい、今の学習内容では↑で精一杯。 */
